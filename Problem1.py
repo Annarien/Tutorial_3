@@ -36,7 +36,7 @@ class Complex:
         ans=self.copy()
         if isinstance(val,Complex):
             ans.r=ans.r*val.r
-            ans.i=ans.i-val.i
+            ans.i=ans.i*val.i
         else:
             ans.r=ans.r*val
         return ans
@@ -46,7 +46,7 @@ class Complex:
         ans=self.copy()
         if isinstance(val,Complex):
             ans.r=ans.r/val.r
-            ans.i+ans.i/val.i
+            ans.i=ans.i/val.i
         else:
             ans.r=ans.r/val
         return ans
